@@ -1,0 +1,71 @@
+# Dokumentacja
+Lista zadań w Pythonie
+
+## Opis projektu
+Program pozwala na zarządzanie listą zadań poprzez ich dodawanie, wyświetlanie i usuwanie. Użytkownik może wprowadzać nowe zadania, usuwać wykonane oraz zakończyć działanie programu.
+
+## Wymagania
+- Python 3.x
+
+## Instrukcja użytkowania
+1. Uruchom program.
+2. Podaj swoje zadania, wciskając Enter po każdym z nich.
+3. Wybierz opcję z menu:
+   - `1` - Dodaj nowe zadanie
+   - `2` - Oznacz zadanie jako wykonane (usuniecie go z listy)
+   - `3` - Zakończ program
+
+## Struktura kodu
+### Funkcja `main()`
+Główna funkcja programu, która realizuje następujące etapy:
+1. Powitanie użytkownika i wczytanie początkowych zadań.
+2. Wyświetlenie menu z opcjami.
+3. Obsługa opcji:
+   - Dodawanie nowych zadań do listy
+   - Usuwanie wybranego zadania
+   - Zakończenie programu
+
+### Lista `tasks`
+Przechowuje zadania wprowadzone przez użytkownika w postaci listy napisów (`str`).
+
+### Pętle
+- Pierwsza pętla `while True` pozwala na wprowadzanie zadań.
+- Druga pętla `while True` umożliwia zarządzanie listą zadań.
+
+### Obsługa wejścia
+- `input()` pozwala na wprowadzanie zadań i wyboru opcji.
+- `strip()` usuwa zbędne spacje.
+- `isdigit()` sprawdza, czy wprowadzona wartość jest liczbą.
+
+### Obsługa usuwania zadań
+- Weryfikacja, czy lista nie jest pusta.
+- Sprawdzenie, czy podany numer zadania jest poprawny.
+- Usunięcie zadania z listy przy użyciu `pop()`.
+
+## Przykładowe działanie programu
+```
+Siema
+Co masz do zrobienia?
+
+Podaj swoje zadania.
+By zakończyć wprowadzanie Enter
+> Zakupy
+> Nauka Pythona
+>
+
+Zadania:
+1. Zakupy
+2. Nauka Pythona
+
+Opcje:
+1. Dodaj nowe zadanie
+2. Zrobione
+3. Zakończ program
+
+Twój wybór: 2
+Podaj numer zadania, które chcesz usunąć: 1
+Zadanie "Zakupy" zostało usunięte.
+```
+
+
+
