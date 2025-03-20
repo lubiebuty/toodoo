@@ -1,6 +1,6 @@
 def main():
 
-    print("Siema \n Co masz do zrobienia?")
+    print("Siema \n Co masz do zrobienia?\n ele ele oo")
 
     # Początkowa lista zadań
     tasks = []
